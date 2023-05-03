@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
+#SET1 is of 100 diffrent faces
+#SET2 is of 10 diffrent angle faces of same person which is in SET1 
 
 # In[1]:
 
@@ -21,7 +23,7 @@ class FaceDetector():
 
     def process(self,train_path,test_path):
         start_main = time.time()*1000
-        encoding_start = time.time()*1000
+        encoding_start = time.time()
         # Load the known images and encode them
         known_face_encodings = []
         known_face_names = []
@@ -37,9 +39,10 @@ class FaceDetector():
                 # Use the file name (without extension) as the name
                 name = os.path.splitext(file_name)[0]
                 known_face_names.append(name)
-        encoding_end = time.time()*1000
+        encoding_end = time.time()
         encoding_time = encoding_end-encoding_start
-        print(f"Inference time for encoding of images : {encoding_time}MiliSecond")
+        print(f"Inference time for encoding of images : {round(encoding_time,2)} Seconds")
+        print('--------------------------------')
         test_images = []
         for file_name in os.listdir(test_path):
             image = cv2.imread(os.path.join(test_path, file_name))
@@ -84,7 +87,7 @@ class FaceDetector():
         inference.append(round(inference_time,2))
         print(':::::::::::::::::::::::::::::::::::::')
         avg_inf = sum(inference)/len(inference)
-        print(f"Average inference time for all the images is {avg_inf/1000}Sec")
+        print(f"Average inference time for all the images is {round((int(avg_inf)/1000),2)} Seconds")
         print("========================================")
         accuracy = (len(num_correct)*100)/len(total_num)
         print(f"Accuracy: {accuracy}%")
@@ -98,8 +101,8 @@ def main():
     
     detector.process(train_path =r"D:\M.SC\HSC\100_diff_faces" ,test_path =r"D:\M.SC\HSC\10_same_facess")
     overall_end = time.time()
-    overall_inference = str(overall_end-overall_start)
-    print("Overall inference time needed to execute entire program(seconds): " , overall_inference)
+    overall_inference = overall_end-overall_start
+    print(f"Overall inference time needed to execute entire program {round(overall_inference,2)} Seconds")
     print("========================================")
 
 if __name__ =="__main__":
@@ -107,6 +110,43 @@ if __name__ =="__main__":
 
 
 # In[ ]:
+'''output :
+Inference time for encoding of images : 46.99 Seconds
+--------------------------------
+image matches with the real_00010 with confidence score of 0.8
+Inference time for Recognizing face is : 0.0MiliSec
+--------------------------------
+image matches with the real_00010 with confidence score of 0.78
+Inference time for Recognizing face is : 0.0MiliSec
+--------------------------------
+image matches with the real_00010 with confidence score of 0.8
+Inference time for Recognizing face is : 0.0MiliSec
+--------------------------------
+image matches with the real_00010 with confidence score of 0.8
+Inference time for Recognizing face is : 0.0MiliSec
+--------------------------------
+image matches with the real_00010 with confidence score of 0.8
+Inference time for Recognizing face is : 0.0MiliSec
+--------------------------------
+image matches with the real_00010 with confidence score of 0.81
+Inference time for Recognizing face is : 0.0MiliSec
+--------------------------------
+image matches with the real_00010 with confidence score of 0.79
+Inference time for Recognizing face is : 0.0MiliSec
+--------------------------------
+image matches with the real_00010 with confidence score of 0.82
+Inference time for Recognizing face is : 0.0MiliSec
+--------------------------------
+:::::::::::::::::::::::::::::::::::::
+Average inference time for all the images is 50.32 Seconds
+========================================
+Accuracy: 80.0%
+========================================
+List of confidence score :  [0.8, 0.78, 0.8, 0.8, 0.8, 0.81, 0.79, 0.82]
+========================================
+Overall inference time needed to execute entire program 50.33 Seconds
+========================================
+'''
 
 
 
