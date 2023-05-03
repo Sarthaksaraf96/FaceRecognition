@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
+#SET1 is of 100 diffrent faces 
+#SET3 is of 10 completly diffrent faces irrespective of SET1
 
-# In[7]:
+# In[1]:
 
 
 '''Class for Calculating InferenceTime , ConfidenceScore and Accuracy '''
@@ -108,6 +110,18 @@ if __name__ =="__main__":
 
 
 # In[ ]:
+'''output:
+Inference time for encoding of images : 47.85 Seconds
+--------------------------------
+:::::::::::::::::::::::::::::::::::::
+Average inference time for all the images is 53.76 Seconds
+========================================
+Accuracy: 0.0%
+========================================
+List of confidence score :  []
+========================================
+Overall inference time needed to execute entire program 53.76 Seconds
+'''
 
 
 
