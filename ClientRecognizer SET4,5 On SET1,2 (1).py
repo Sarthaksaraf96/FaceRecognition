@@ -134,9 +134,27 @@ def main():
 if __name__ =="__main__":
     main()
 
-
+'''
+Output:
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+Clients Name :image_ (119) ; Confidence Score: 60.88
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+==================================
+No image in database count :99
+overall Inference is 57.8 Seconds
+Average Inference Time for each image: 0.2 seconds
+list of confidence scores: [60.88]
+Accuracy : 99.0%
+'''
 # In[3]:
-
+###################################################################################
 
 '''SET4+5 on SET2
 SET4+5 = 1000 Images
@@ -257,9 +275,36 @@ def main():
     print(f"Accuracy : {accuracy}%")
 if __name__ =="__main__":
     main()
+    
+'''
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+--------------------------------
+--------------------------------
+==================================
+overall Inference is 4.23 Seconds
+Average Inference Time for each image: 0.42 seconds
+Average Inference Time for each image: []
+Accuracy : 0.0%
+'''
 
 
 # In[18]:
+###################################################################################
 
 
 '''SET4+5 on SET2(part_1)
@@ -384,7 +429,35 @@ def main():
 if __name__ =="__main__":
     main()
 
-
+'''
+Output:
+Clients Name :image_ (1) ; Confidence Score: 58.32
+--------------------------------
+Clients Name :image_ (1) ; Confidence Score: 58.68
+--------------------------------
+Clients Name :image_ (1) ; Confidence Score: 58.07
+--------------------------------
+Clients Name :image_ (1) ; Confidence Score: 52.02
+--------------------------------
+Clients Name :image_ (1) ; Confidence Score: 45.43
+--------------------------------
+Clients Name :image_ (1) ; Confidence Score: 55.2
+--------------------------------
+Clients Name :image_ (1) ; Confidence Score: 57.81
+--------------------------------
+Clients Name :image_ (1) ; Confidence Score: 60.99
+--------------------------------
+Clients Name :image_ (1) ; Confidence Score: 56.14
+--------------------------------
+Clients Name :image_ (1) ; Confidence Score: 57.15
+--------------------------------
+==================================
+overall Inference is 6.02 Seconds
+Average Inference Time for each image: 0.6 seconds
+Average Inference Time for each image: [58.32, 58.68, 58.07, 52.02, 45.43, 55.2, 57.81, 60.99, 56.14, 57.15]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Accuracy : 100.0%
+'''
 # In[ ]:
 
 
