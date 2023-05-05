@@ -123,6 +123,32 @@ if __name__ =="__main__":
 
 
 # In[ ]:
+'''
+OUTPUT - SET1-SET2
+Clients Name :11 ; Confidence Score: 67.83
+--------------------------------
+Clients Name :11 ; Confidence Score: 56.8
+--------------------------------
+Clients Name :11 ; Confidence Score: 66.51
+--------------------------------
+Clients Name :11 ; Confidence Score: 86.41
+--------------------------------
+Clients Name :11 ; Confidence Score: 56.7
+--------------------------------
+Clients Name :11 ; Confidence Score: 47.84
+--------------------------------
+Clients Name :11 ; Confidence Score: 63.82
+--------------------------------
+Clients Name :11 ; Confidence Score: 54.69
+--------------------------------
+--------------------------------
+--------------------------------
+==================================
+overall Inference is 13.72 Seconds
+Average Inference Time for each image: 1.37 seconds
+Average Inference Time for each image: [67.83, 56.8, 66.51, 86.41, 56.7, 47.84, 63.82, 54.69]
+Accuracy : 80.0%
+'''
 
 
 
@@ -249,7 +275,34 @@ if __name__ =="__main__":
     main()
 
 
-# In[ ]:
+'''
+OUTPUT- SET1-SET33
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+No image in database
+--------------------------------
+==================================
+overall Inference is 24.35 Seconds
+Average Inference Time for each image: 2.43 seconds
+Average Inference Time for each image: []
+Accuracy : 0.0%
+'''
 
 
 
