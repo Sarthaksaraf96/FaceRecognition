@@ -105,7 +105,28 @@ if __name__ =="__main__":
     main()
 
 
-# In[38]:
+'''output
+No image in database
+Test Image: 10.jpg
+No image in database
+Test Image: 11.jpg
+No image in database
+Test Image: 22.jpg
+No image in database
+Test Image: 33.jpg
+No image in database
+Test Image: 44.jpeg
+No image in database
+Test Image: 55.jpg
+No image in database
+Test Image: 66.jpeg
+No image in database
+Test Image: 77.jpeg
+No image in database
+Test Image: 88.jpeg
+No image in database
+Test Image: 99.jpeg
+overall Inference is 7.93 Seconds'''
 
 
 '''SET1-SET3'''
@@ -208,4 +229,33 @@ def main():
         
 if __name__ =="__main__":
     main()
-
+    
+    
+'''output
+inferenceTime for this image 0.5124058723449707
+Clients Name :  11
+Test Image: 01.jpg
+inferenceTime for this image 0.5452795028686523
+Clients Name :  11
+Test Image: 02.jpg
+inferenceTime for this image 0.5378870964050293
+Clients Name :  11
+Test Image: 03.jpg
+inferenceTime for this image 0.4702768325805664
+Clients Name :  11
+Test Image: 04.jpg
+inferenceTime for this image 0.560265064239502
+Clients Name :  11
+Test Image: 05.jpg
+inferenceTime for this image 0.5565392971038818
+Clients Name :  11
+Test Image: 06.jpg
+inferenceTime for this image 0.5258457660675049
+Clients Name :  11
+Test Image: 07.jpg
+inferenceTime for this image 0.49270009994506836
+Clients Name :  11
+Test Image: 08.jpg
+Test Image: 09.jpg
+Test Image: 10.jpg
+overall Inference is 4.37 Seconds'''
